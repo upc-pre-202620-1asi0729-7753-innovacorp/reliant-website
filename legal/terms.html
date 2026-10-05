@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Terms &amp; Conditions | Reliant</title>
-  <meta name="description" content="Terms and Conditions of Service for Reliant, a product by InnovaCorp." />
+  <title data-i18n="meta.terms.title">Terms &amp; Conditions | Reliant</title>
+  <meta name="description" data-i18n-content="meta.terms.description" content="Terms and Conditions of Service for Reliant, a product by InnovaCorp." />
   <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="../assets/css/styles.css" />
   <style>
@@ -14,72 +14,77 @@
   </style>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a class="skip-link" href="#main-content" data-i18n="accessibility.skip">Skip to main content</a>
 
   <header class="site-header" role="banner">
     <div class="container header-inner">
-      <a href="../index.html" class="logo" aria-label="Reliant home">
+      <a href="../index.html" class="logo" aria-label="Reliant home" data-i18n-aria-label="accessibility.home">
         <span class="logo-mark" aria-hidden="true">R</span>
         <span class="logo-text">Reliant</span>
       </a>
+      <div class="language-switcher" role="group" aria-label="Language selector" data-i18n-aria-label="accessibility.language">
+        <button type="button" data-language="en" aria-pressed="false">EN</button>
+        <button type="button" data-language="es" aria-pressed="false">ES</button>
+      </div>
     </div>
   </header>
 
   <main id="main-content" class="container">
     <article class="legal-content">
-      <h1>Terms &amp; Conditions</h1>
-      <p><em>Last updated: [DD Month YYYY]</em></p>
+      <h1 data-i18n="terms.title">Terms &amp; Conditions</h1>
+      <p><em data-i18n="legal.updated">Last updated: [DD Month YYYY]</em></p>
 
-      <p>
+      <p data-i18n="terms.intro">
         These Terms &amp; Conditions ("Terms") govern access to and use of the Reliant platform
         ("Reliant", "the Service"), operated by InnovaCorp ("we", "us"). By accessing the Landing
         Page or the Reliant Web Application, you agree to these Terms.
       </p>
 
-      <h2>1. Description of the service</h2>
-      <p>
+      <h2 data-i18n="terms.section1.title">1. Description of the service</h2>
+      <p data-i18n="terms.section1.body">
         Reliant is a platform that connects Recuperation Suppliers and Asset Owners to
         facilitate the recovery, reconditioning and redeployment of industrial components.
       </p>
 
-      <h2>2. Eligibility and accounts</h2>
-      <p>
+      <h2 data-i18n="terms.section2.title">2. Eligibility and accounts</h2>
+      <p data-i18n="terms.section2.body">
         Users must provide accurate registration information and are responsible for maintaining
         the confidentiality of their account credentials.
       </p>
 
-      <h2>3. User responsibilities</h2>
-      <p>
+      <h2 data-i18n="terms.section3.title">3. User responsibilities</h2>
+      <p data-i18n="terms.section3.body">
         Users agree to use the Service lawfully and to provide truthful information about the
         components, requests and services they list or request through the platform.
       </p>
 
-      <h2>4. Limitation of liability</h2>
-      <p>
+      <h2 data-i18n="terms.section4.title">4. Limitation of liability</h2>
+      <p data-i18n="terms.section4.body">
         Reliant acts as an intermediary platform. InnovaCorp is not a party to agreements between
         Recuperation Suppliers and Asset Owners and is not liable for the outcome of such
         agreements.
       </p>
 
-      <h2>5. Changes to these Terms</h2>
-      <p>
+      <h2 data-i18n="terms.section5.title">5. Changes to these Terms</h2>
+      <p data-i18n="terms.section5.body">
         We may update these Terms from time to time. Continued use of the Service after changes
         constitutes acceptance of the updated Terms.
       </p>
 
-      <h2>6. Contact</h2>
-      <p>Questions about these Terms can be sent to the InnovaCorp team via the contact channel indicated in the Web Application.</p>
+      <h2 data-i18n="terms.section6.title">6. Contact</h2>
+      <p data-i18n="terms.section6.body">Questions about these Terms can be sent to the InnovaCorp team via the contact channel indicated in the Web Application.</p>
 
-      <p><a href="../index.html">&larr; Back to Reliant</a></p>
+      <p><a href="../index.html" data-i18n="legal.back">&larr; Back to Reliant</a></p>
     </article>
   </main>
 
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <p class="footer-copyright">&copy; <span id="year"></span> InnovaCorp &mdash; Reliant. All rights reserved.</p>
+      <p class="footer-copyright">&copy; <span id="year"></span> <span data-i18n="footer.copyright">InnovaCorp &mdash; Reliant. All rights reserved.</span></p>
     </div>
   </footer>
 
+  <script src="../assets/js/i18n.js"></script>
   <script src="../assets/js/script.js"></script>
 </body>
 </html>
