@@ -5,6 +5,10 @@ Versioning follows [Semantic Versioning 2.0.0](https://semver.org/).
 
 ## [Unreleased]
 
+### Added
+- English and Spanish internationalization (i18n) for the landing page and legal pages.
+- Language switcher (EN/ES) that remembers the visitor's choice and defaults to the browser language.
+
 ## [0.1.0] - AV1 (Semana 4)
 
 ### Added

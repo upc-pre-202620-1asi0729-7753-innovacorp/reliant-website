@@ -33,7 +33,8 @@ reliant-landing-page/
 │   ├── css/
 │   │   └── styles.css         # All styles (mobile-first)
 │   ├── js/
-│   │   └── script.js          # Navigation, smooth scroll, segment CTAs
+│   │   ├── script.js          # Navigation, smooth scroll, segment CTAs
+│   │   └── i18n.js            # English/Spanish translations and language switcher
 │   └── img/                   # Images / icons (SVG placeholders)
 ├── legal/
 │   ├── terms.html              # Terms & Conditions
