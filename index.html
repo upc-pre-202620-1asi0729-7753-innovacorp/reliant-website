@@ -1,279 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-i18n="meta.home.title">Reliant | Industrial Component Recuperation Platform</title>
-  <meta name="description" data-i18n-content="meta.home.description" content="Reliant connects Recuperation Suppliers and Asset Owners to recover, recondition and redeploy industrial components faster and more sustainably." />
-  <meta name="keywords" content="Reliant, InnovaCorp, industrial component recovery, asset recovery, recuperation supplier, asset owner, circular economy" />
-  <meta name="author" content="InnovaCorp" />
+    <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Reliant | Industrial Component Recuperation Platform" />
-  <meta property="og:description" content="Connecting Recuperation Suppliers and Asset Owners to give industrial components a second life." />
-  <meta property="og:type" content="website" />
+    <title>Reliant - Inicio</title>
 
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+    
+
 <body>
 
-  <a class="skip-link" href="#main-content" data-i18n="accessibility.skip">Skip to main content</a>
+    <!-- =========================
+         NAVBAR
+    ========================= -->
 
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <a href="#top" class="logo" aria-label="Reliant home" data-i18n-aria-label="accessibility.home">
-        <span class="logo-mark" aria-hidden="true">R</span>
-        <span class="logo-text">Reliant</span>
-      </a>
+    <header>
+        <nav class="navbar">
 
-      <button
-        class="nav-toggle"
-        id="navToggle"
-        type="button"
-        aria-expanded="false"
-        aria-controls="primaryNav"
-        aria-label="Toggle navigation menu"
-        data-i18n-aria-label="accessibility.menu"
-      >
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-      </button>
-
-      <nav class="primary-nav" id="primaryNav" aria-label="Primary" data-i18n-aria-label="accessibility.primary">
-        <ul>
-          <li><a href="#value-proposition" data-i18n="nav.why">Why Reliant</a></li>
-          <li><a href="#segments" data-i18n="nav.segments">Segments</a></li>
-          <li><a href="#how-it-works" data-i18n="nav.how">How it works</a></li>
-          <li><a href="#contact-cta" data-i18n="nav.contact">Contact</a></li>
-        </ul>
-        <div class="language-switcher" role="group" aria-label="Language selector" data-i18n-aria-label="accessibility.language">
-          <button type="button" data-language="en" aria-pressed="false">EN</button>
-          <button type="button" data-language="es" aria-pressed="false">ES</button>
-        </div>
-        <a class="btn btn-primary nav-cta" href="#segments" data-i18n="nav.start">Get started</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main-content">
-
-    <section id="top" class="hero" aria-labelledby="hero-heading">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <p class="eyebrow" data-i18n="hero.eyebrow">Industrial component recuperation, simplified</p>
-          <h1 id="hero-heading" data-i18n="hero.title">
-            Give idle industrial components a second life &mdash; faster, traceable, sustainable.
-          </h1>
-          <p class="hero-subtitle" data-i18n-html="hero.subtitle">
-            Reliant connects <strong>Recuperation Suppliers</strong> who recover and recondition
-            industrial components with <strong>Asset Owners</strong> who need reliable components
-            back in operation quickly, cutting downtime and reducing waste.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#segments" data-segment-link="recuperation-supplier" data-i18n="hero.supplier">
-              I&rsquo;m a Recuperation Supplier
-            </a>
-            <a class="btn btn-secondary" href="#segments" data-segment-link="asset-owner" data-i18n="hero.owner">
-              I&rsquo;m an Asset Owner
-            </a>
-          </div>
-        </div>
-        <div class="hero-media" aria-hidden="true">
-          <div class="hero-card hero-card-1">
-            <span class="hero-card-label" data-i18n="hero.metric.time">Avg. recovery time</span>
-            <span class="hero-card-value">-38%</span>
-          </div>
-          <div class="hero-card hero-card-2">
-            <span class="hero-card-label" data-i18n="hero.metric.components">Components diverted from landfill</span>
-            <span class="hero-card-value">12,400+</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="value-proposition" class="value-proposition" aria-labelledby="value-heading">
-      <div class="container">
-        <h2 id="value-heading" data-i18n="value.title">Why teams choose Reliant</h2>
-        <p class="section-intro" data-i18n="value.intro">
-          One platform to list, discover, evaluate and track industrial components across their
-          full recuperation lifecycle.
-        </p>
-
-        <div class="value-grid">
-          <article class="value-card">
-            <div class="value-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8">
-                <path d="M12 3l8 4v5c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V7l8-4z" />
-              </svg>
+            <div class="logo">
+                    <a href="index.html">
+                    <img src="img/logo.png" alt="Reliant">
+                </a>
             </div>
-            <h3 data-i18n="value.traceability.title">Traceability</h3>
-            <p data-i18n="value.traceability.body">
-              Every component is tracked from intake through reconditioning to redeployment, so
-              Asset Owners always know the history and condition of what they receive.
-            </p>
-          </article>
 
-          <article class="value-card">
-            <div class="value-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8">
-                <path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z" />
-              </svg>
-            </div>
-            <h3 data-i18n="value.matching.title">Faster matching</h3>
-            <p data-i18n="value.matching.body">
-              Reliant matches recovery requests with available Recuperation Suppliers by
-              component type, location and turnaround time, cutting downtime for critical assets.
-            </p>
-          </article>
+            <ul class="menu">
 
-          <article class="value-card">
-            <div class="value-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8">
-                <path d="M4 4v16h16" />
-                <path d="M4 15l4-4 4 3 8-8" />
-              </svg>
-            </div>
-            <h3 data-i18n="value.sustainable.title">Sustainable by design</h3>
-            <p data-i18n="value.sustainable.body">
-              Recovering and redeploying components instead of scrapping them reduces waste and
-              supports circular-economy goals for both sides of the marketplace.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
+                <li><a href="servicos.html">Servicios</a></li>
+                <li><a href="planes.html">Planes</a></li>
+                <li><a href="quienessomos.html">Quienes Somos</a></li>
+                <li><a href="#contacto" class="btn-contacto">Contáctanos</a></li>
 
-    <section id="segments" class="segments" aria-labelledby="segments-heading">
-      <div class="container">
-        <h2 id="segments-heading" data-i18n="segments.title">Built for two segments</h2>
-        <p class="section-intro" data-i18n="segments.intro">Choose your profile to see how Reliant works for you.</p>
-
-        <div class="segment-grid">
-          <article class="segment-card" aria-labelledby="segment-supplier-heading">
-            <p class="segment-tag" data-i18n="segments.supplier.tag">Recuperation Supplier</p>
-            <h3 id="segment-supplier-heading" data-i18n="segments.supplier.title">Grow your recovery business</h3>
-            <p data-i18n="segments.supplier.body">
-              List your recuperation capabilities, receive matched recovery requests from Asset
-              Owners, and manage every job from intake to delivery in one place.
-            </p>
-            <ul class="segment-benefits">
-              <li data-i18n="segments.supplier.benefit1">Get discovered by Asset Owners searching for your component specialty.</li>
-              <li data-i18n="segments.supplier.benefit2">Manage requests, quotes and status updates from a single dashboard.</li>
-              <li data-i18n="segments.supplier.benefit3">Build a verifiable track record that wins you repeat business.</li>
+                     <div class="user"> 
+                        <img src="img/user.png" alt="Usuario"> 
+                    </div>
+                        
+                
             </ul>
-            <a
-              class="btn btn-primary"
-              href="https://app.reliant.example.com/onboarding?segment=recuperation-supplier"
-              data-segment-cta="recuperation-supplier"
-              data-i18n="segments.supplier.cta"
-            >
-              Join as a Recuperation Supplier
-            </a>
-          </article>
 
-          <article class="segment-card" aria-labelledby="segment-owner-heading">
-            <p class="segment-tag" data-i18n="segments.owner.tag">Asset Owner</p>
-            <h3 id="segment-owner-heading" data-i18n="segments.owner.title">Get critical components back faster</h3>
-            <p data-i18n="segments.owner.body">
-              Submit a recovery request, compare matched suppliers by turnaround and track
-              record, and follow your component&rsquo;s progress until it&rsquo;s back in
-              operation.
+        </nav>
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================= -->
+
+    <section class="hero">
+
+        <img src="img/supervisor.png"
+            alt="Agricultor"
+            class="hero-img">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <h1>
+                    Tus procesos HVOF, <br>
+                    <span>más inteligente</span>
+                </h1>
+
+                <p>
+                    Monitorea, analiza y conecta cada etapa de tus procesos HVOF
+                    para obtener mayor trazabilidad, detectar desviaciones y
+                    tomar decisiones respaldadas por datos.
+                </p>
+
+
+                <button class="btn-descarga">
+                    <img src="img/descarga.png" alt="Descargar">
+                    Solicitar demo
+                </button>
+
+            </div>
+
+        
+
+        </div>
+
+    </section>
+
+
+    
+
+<section class="testimonios">
+
+    <!-- MARÍA -->
+    <div class="testimonio">
+
+        <div class="testimonio-inner">
+
+            <!-- FRENTE -->
+            <div class="testimonio-front">
+
+                <img src="img/icono1.png" alt="icono1">
+
+                <p>
+                    "Visualiza los parámetros críticos del proceso durante cada sesión de rociado."
+                </p>
+
+            </div>
+
+            <!-- REVERSO -->
+            <div class="testimonio-back">
+
+                <h3>MONITOREO EN TIEMPO REAL</h3>
+                
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CARLOS -->
+    <div class="testimonio">
+
+        <div class="testimonio-inner">
+
+            <!-- FRENTE -->
+            <div class="testimonio-front">
+
+                <img src="img/icono2.png" alt="icono2">
+
+                <p>
+                    "Relaciona componentes, órdenes, recetas y sesiones en un mismo historial."
+                </p>
+
+            </div>
+
+            <!-- REVERSO -->
+            <div class="testimonio-back">
+
+                <h3>TRAZABILIDAD COMPLETA</h3>
+              
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ANA -->
+    <div class="testimonio">
+
+        <div class="testimonio-inner">
+
+            <!-- FRENTE -->
+            <div class="testimonio-front">
+
+                <img src="img/icono3.png" alt="icono3">
+
+                <p>
+                    "Convierte la información del proceso en evidencia útil 
+                    para calidad y confiabilidad."
+                </p>
+
+            </div>
+
+            <!-- REVERSO -->
+            <div class="testimonio-back">
+
+                <h3>DECISIONES CON DATOS</h3>
+               
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer id="contacto">
+
+        <div class="footer-col">
+
+            <img src="img/logo.png" class="footer-logo">
+
+            <p>
+                Tecnología y control al servicio de tus procesos.
+                 Construyendo una operación más inteligente.
             </p>
-            <ul class="segment-benefits">
-              <li data-i18n="segments.owner.benefit1">Reduce downtime with faster access to qualified recuperation suppliers.</li>
-              <li data-i18n="segments.owner.benefit2">Compare options transparently by cost, timeline and history.</li>
-              <li data-i18n="segments.owner.benefit3">Track every request from submission to delivery.</li>
-            </ul>
-            <a
-              class="btn btn-primary"
-              href="https://app.reliant.example.com/onboarding?segment=asset-owner"
-              data-segment-cta="asset-owner"
-              data-i18n="segments.owner.cta"
-            >
-              Join as an Asset Owner
-            </a>
-          </article>
+
+             <img src="img/redes.png" class="footer-redes" alt="Redes sociales">
+
         </div>
-      </div>
-    </section>
 
-    <section id="how-it-works" class="how-it-works" aria-labelledby="how-heading">
-      <div class="container">
-        <h2 id="how-heading" data-i18n="steps.title">How Reliant works</h2>
+        <div class="footer-col">
 
-        <ol class="steps">
-          <li class="step">
-            <span class="step-number" aria-hidden="true">1</span>
-            <h3 data-i18n="steps.profile.title">Create a profile</h3>
-            <p data-i18n="steps.profile.body">Sign up as a Recuperation Supplier or an Asset Owner and set up your profile.</p>
-          </li>
-          <li class="step">
-            <span class="step-number" aria-hidden="true">2</span>
-            <h3 data-i18n="steps.discover.title">Post or discover</h3>
-            <p data-i18n="steps.discover.body">Asset Owners post recovery requests; Recuperation Suppliers get matched to relevant ones.</p>
-          </li>
-          <li class="step">
-            <span class="step-number" aria-hidden="true">3</span>
-            <h3 data-i18n="steps.track.title">Track progress</h3>
-            <p data-i18n="steps.track.body">Follow every component through recuperation with shared, transparent status updates.</p>
-          </li>
-          <li class="step">
-            <span class="step-number" aria-hidden="true">4</span>
-            <h3 data-i18n="steps.redeploy.title">Redeploy</h3>
-            <p data-i18n="steps.redeploy.body">Receive the recovered component and put it back into operation with full traceability.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
+            <h3>Navegación</h3>
 
-    <section id="contact-cta" class="contact-cta" aria-labelledby="contact-heading">
-      <div class="container contact-cta-inner">
-        <h2 id="contact-heading" data-i18n="cta.title">Ready to recover more value from your industrial components?</h2>
-        <p data-i18n="cta.body">Join Reliant today &mdash; it only takes a few minutes to get started.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="https://app.reliant.example.com/onboarding?segment=recuperation-supplier" data-i18n="hero.supplier">
-            I&rsquo;m a Recuperation Supplier
-          </a>
-          <a class="btn btn-secondary" href="https://app.reliant.example.com/onboarding?segment=asset-owner" data-i18n="hero.owner">
-            I&rsquo;m an Asset Owner
-          </a>
+            <a href="servicos.html">Servicios</a>
+            <a href="planes.html">Planes</a>
+            <a href="quienessomos.html">Quienes Somos</a>
+
         </div>
-      </div>
-    </section>
 
-  </main>
+        <div class="footer-col">
 
-  <footer class="site-footer" role="contentinfo">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <span class="logo-mark" aria-hidden="true">R</span>
-        <span class="logo-text">Reliant</span>
-        <p data-i18n="footer.product">A product by InnovaCorp.</p>
-      </div>
+            <h3>Contacto</h3>
 
-      <nav class="footer-nav" aria-label="Footer" data-i18n-aria-label="accessibility.footer">
-        <ul>
-          <li><a href="#value-proposition" data-i18n="nav.why">Why Reliant</a></li>
-          <li><a href="#segments" data-i18n="nav.segments">Segments</a></li>
-          <li><a href="#how-it-works" data-i18n="nav.how">How it works</a></li>
-        </ul>
-      </nav>
+            <p>info@reliant.com</p>
+            <p>+51 999 999 999</p>
+            <p>Lima, Perú</p>
 
-      <nav class="footer-legal" aria-label="Legal" data-i18n-aria-label="accessibility.legal">
-        <ul>
-          <li><a href="legal/terms.html" data-i18n="footer.terms">Terms &amp; Conditions</a></li>
-          <li><a href="legal/privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
-        </ul>
-      </nav>
+        </div>
+
+    </footer>
+
+    <div class="copyright">
+        © 2026 Reliant. Todos los derechos reservados.
     </div>
-    <div class="container">
-      <p class="footer-copyright">&copy; <span id="year"></span> <span data-i18n="footer.copyright">InnovaCorp &mdash; Reliant. All rights reserved.</span></p>
-    </div>
-  </footer>
 
-  <script src="assets/js/i18n.js"></script>
-  <script src="assets/js/script.js"></script>
+    <script src="public/assets/scripts/scripts.js"></script>
+
 </body>
+
 </html>
