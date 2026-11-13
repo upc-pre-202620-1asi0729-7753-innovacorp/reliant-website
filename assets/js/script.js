@@ -7,6 +7,31 @@
 (function () {
   "use strict";
 
+  /* ---------- About videos ----------
+   * Paste the YouTube video IDs here (the part after "youtu.be/" or "v=").
+   * Leave a value empty to keep the "Video coming soon" placeholder.
+   */
+  var ABOUT_VIDEOS = {
+    product: "",
+    team: ""
+  };
+
+  document.querySelectorAll("[data-video]").forEach(function (frame) {
+    var id = ABOUT_VIDEOS[frame.getAttribute("data-video")];
+    if (!id) {
+      return;
+    }
+    var iframe = document.createElement("iframe");
+    iframe.src = "https://www.youtube-nocookie.com/embed/" + id;
+    iframe.title = frame.getAttribute("data-video-title") || "Reliant video";
+    iframe.loading = "lazy";
+    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    iframe.allowFullscreen = true;
+    iframe.referrerPolicy = "strict-origin-when-cross-origin";
+    frame.innerHTML = "";
+    frame.appendChild(iframe);
+  });
+
   /* ---------- Mobile navigation toggle ---------- */
   var navToggle = document.getElementById("navToggle");
   var primaryNav = document.getElementById("primaryNav");
@@ -34,33 +59,17 @@
   }
 
   /* ---------- Segment-aware hero CTAs ---------- */
-  // Hero buttons carry data-segment-link="recuperation-supplier" | "asset-owner".
-  // Clicking one scrolls to #segments and highlights the matching card so the
-  // visitor lands on the option that matches what they selected.
-  var segmentLinks = document.querySelectorAll("[data-segment-link]");
-
-  segmentLinks.forEach(function (link) {
-    link.addEventListener("click", function (event) {
-      var segment = link.getAttribute("data-segment-link");
-      var targetCard = document.querySelector(
-        '[data-segment-cta="' + segment + '"]'
-      );
-
-      if (targetCard) {
-        event.preventDefault();
-        document.getElementById("segments").scrollIntoView({ behavior: "smooth" });
-
-        // Briefly highlight the matching segment card.
-        var card = targetCard.closest(".segment-card");
-        if (card) {
-          card.classList.add("is-highlighted");
-          window.setTimeout(function () {
-            card.classList.remove("is-highlighted");
-          }, 2000);
-        }
-
-        targetCard.focus({ preventScroll: true });
-      }
-    });
+  // Hero buttons carry data-segment-link="recuperation-supplier" | "asset-owner"
+  // and link straight to the web application sign-up with the matching
+  // organization type. Hovering one highlights the matching segment card.
+  document.querySelectorAll("[data-segment-link]").forEach(function (link) {
+    var segment = link.getAttribute("data-segment-link");
+    var targetCard = document.querySelector('[data-segment-cta="' + segment + '"]');
+    var card = targetCard ? targetCard.closest(".segment-card") : null;
+    if (!card) {
+      return;
+    }
+    link.addEventListener("mouseenter", function () { card.classList.add("is-highlighted"); });
+    link.addEventListener("mouseleave", function () { card.classList.remove("is-highlighted"); });
   });
 })();

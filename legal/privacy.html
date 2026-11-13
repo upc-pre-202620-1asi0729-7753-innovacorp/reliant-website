@@ -6,12 +6,8 @@
   <title data-i18n="meta.privacy.title">Privacy Policy | Reliant</title>
   <meta name="description" data-i18n-content="meta.privacy.description" content="Privacy Policy for Reliant, a product by InnovaCorp." />
   <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/styles.css" />
-  <style>
-    .legal-content { max-width: 70ch; margin-inline: auto; padding-block: var(--space-xl); }
-    .legal-content h1 { margin-bottom: var(--space-md); }
-    .legal-content h2 { font-size: 1.25rem; margin-top: var(--space-lg); }
-  </style>
 </head>
 <body>
   <a class="skip-link" href="#main-content" data-i18n="accessibility.skip">Skip to main content</a>
@@ -19,8 +15,7 @@
   <header class="site-header" role="banner">
     <div class="container header-inner">
       <a href="../index.html" class="logo" aria-label="Reliant home" data-i18n-aria-label="accessibility.home">
-        <span class="logo-mark" aria-hidden="true">R</span>
-        <span class="logo-text">Reliant</span>
+        <img src="../assets/img/logo.png" alt="Reliant" class="logo-img" width="150" height="46" />
       </a>
       <div class="language-switcher" role="group" aria-label="Language selector" data-i18n-aria-label="accessibility.language">
         <button type="button" data-language="en" aria-pressed="false">EN</button>
@@ -81,7 +76,7 @@
   </main>
 
   <footer class="site-footer" role="contentinfo">
-    <div class="container">
+    <div class="container footer-bottom">
       <p class="footer-copyright">&copy; <span id="year"></span> <span data-i18n="footer.copyright">InnovaCorp &mdash; Reliant. All rights reserved.</span></p>
     </div>
   </footer>
