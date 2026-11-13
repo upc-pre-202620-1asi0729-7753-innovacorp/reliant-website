@@ -3,16 +3,11 @@
 All notable changes to the Reliant Landing Page are documented here.
 Versioning follows [Semantic Versioning 2.0.0](https://semver.org/).
 
-## [2.1.1] - 2026-11-13
-
-### Added
-- About the Product and About the Team YouTube videos embedded in the About us section.
-
-## [2.1.0] - 2026-11-13 - AV2 (Semana 12)
+## [3.0.0] - 2026-11-13 - AV2 (Semana 12)
 
 ### Added
 - New visual identity: Poppins typography, navy/orange palette, Reliant logo, hero photography and icon cards.
-- Services, Plans, About us (About the Product / About the Team videos, mission, vision, values) and Contact sections.
+- Services, Plans, About us (About the Product / About the Team YouTube videos, mission, vision, values) and Contact sections.
 - "Sign in" and "Get started" actions in the header; footer with contact details, social links and legal navigation.
 - Open Graph metadata.
 

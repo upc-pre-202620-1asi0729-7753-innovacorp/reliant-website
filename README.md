@@ -148,4 +148,4 @@ Every page footer links to:
 ## Course context
 
 - Course: 1ASI0729 Desarrollo de Aplicaciones Open Source — UPC
-- Deliverables: AV1 (Sprint Review — Semana 4) first version; TB1 (2.0.0) i18n; AV2 (2.1.0) redesign, plans, About videos and web application links.
+- Deliverables: AV1 (Sprint Review — Semana 4) first version; TB1 (2.0.0) i18n; AV2 (3.0.0) redesign, plans, About videos and web application links.
