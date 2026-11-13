@@ -3,6 +3,11 @@
 All notable changes to the Reliant Landing Page are documented here.
 Versioning follows [Semantic Versioning 2.0.0](https://semver.org/).
 
+## [2.1.1] - 2026-11-13
+
+### Added
+- About the Product and About the Team YouTube videos embedded in the About us section.
+
 ## [2.1.0] - 2026-11-13 - AV2 (Semana 12)
 
 ### Added
