@@ -3,7 +3,7 @@
 All notable changes to the Reliant Landing Page are documented here.
 Versioning follows [Semantic Versioning 2.0.0](https://semver.org/).
 
-## [2.1.0] - AV2 (Semana 12)
+## [2.1.0] - 2026-11-13 - AV2 (Semana 12)
 
 ### Added
 - New visual identity: Poppins typography, navy/orange palette, Reliant logo, hero photography and icon cards.
