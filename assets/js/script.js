@@ -12,8 +12,8 @@
    * Leave a value empty to keep the "Video coming soon" placeholder.
    */
   var ABOUT_VIDEOS = {
-    product: "",
-    team: ""
+    product: "T1w7KEkz4g0",
+    team: "oeCfkoXPoIM"
   };
 
   document.querySelectorAll("[data-video]").forEach(function (frame) {

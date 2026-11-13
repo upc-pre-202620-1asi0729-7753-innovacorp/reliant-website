@@ -40,7 +40,7 @@ var ABOUT_VIDEOS = {
 };
 ```
 
-While an ID is empty the section shows a "Video coming soon" placeholder.
+While an ID is empty the section shows a "Video coming soon" placeholder. Current videos: [About the Product](https://youtu.be/T1w7KEkz4g0) and [About the Team](https://youtu.be/oeCfkoXPoIM).
 
 ## Tech stack
 
